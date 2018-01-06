@@ -13,17 +13,23 @@
 
 
 # Stories
-## Be able to apply beepro
+## Apply beepro to the repository
 1. Beeはブランチを切る（必要に応じて）みんぷろは関与しない
 2. Beeは dancerを使ってbeeproを適応する
 3. Beeは 対象のブランチ名を入力する（デフォルト値は現在のブランチ名）
 4. dancerはHoneyCombにブランチ名、レポジトリのパスを知らせる
 5. HoneyCombは該当レポジトリ、ブランチのHoneyが存在しないので、ダウンロードを行い、Honeyを初期化し、.beercを作成する
-6. dancerは該当のhoneyとnectarの同期処理を開始する
+6. dancerは該当のhoneyとnectarのsyncを行い、danceを開始する
 
-## Be able to join existing beepro
+## Join to existing beepro
 1. Beeはブランチをチェックアウトする
-2. dancerは .beercを検知し、設定を基にhoneyとnectarの同期処理を開始する
+2. dancerは .beercを検知し、設定を基にhoneyとnectarのsyncを行い、danceを開始する
+
+## Resume development
+1. BeeはIDEを立ち上げる
+2. dancerは .beercを検知し、設定を基にhoneyとnectarのsyncを行い、danceを開始する
+
+
 
 ## Be able to synchronize nectar with honey ( file contents change )
 
