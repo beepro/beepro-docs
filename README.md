@@ -26,3 +26,6 @@
 ## Be able to synchronize nectar ( file contents change )
 
 ## Be able to synchronize nectar ( file operation - making new file, delete file )
+
+# Color Scheme
+https://coolors.co/e86161-989c94-f47e4b-25291c-e6e49f
