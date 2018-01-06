@@ -7,6 +7,7 @@
 |honeycomb|beeproが適応されているコードベースを管理するサーバー|
 |dancer|beeの行った変更をhoneycombに対して通知する各IDEのプラグイン|
 |nectar|各beeのローカルに存在しているコードベース|
+|.beerc|honeycombが初期化時に生成するbeeproの設定ファイル。接続先などの情報をもつ|
 
 
 # Stories
