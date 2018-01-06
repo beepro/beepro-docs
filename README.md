@@ -14,7 +14,7 @@
 
 # Stories
 ## Apply beepro to the repository
-1. Beeはブランチを切る（必要に応じて）みんぷろは関与しない
+1. Beeはブランチを切る（必要に応じて）beeproは関与しない
 2. Beeは dancerを使ってbeeproを適応する
 3. Beeは 対象のブランチ名を入力する（デフォルト値は現在のブランチ名）
 4. dancerはHoneyCombにブランチ名、レポジトリのパスを知らせる
@@ -34,6 +34,9 @@
 ## Be able to synchronize nectar with honey ( file contents change )
 
 ## Be able to synchronize nectar with honey ( file operation - making new file, delete file )
+
+# Architecture
+[Overview](https://github.com/beepro/beepro-docs/blob/master/beepro-overview.pdf)
 
 # Color Scheme
 https://coolors.co/e86161-989c94-f47e4b-25291c-e6e49f
