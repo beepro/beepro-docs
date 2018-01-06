@@ -6,7 +6,7 @@
 |honey source|honeycomb上に存在しているコードベース|
 |honeycomb|beeproが適応されているコードベースを管理するサーバー|
 |dancer|beeの行った変更をhoneycombに対して通知する各IDEのプラグイン|
-|nector|各beeのローカルに存在しているコードベース|
+|nectar|各beeのローカルに存在しているコードベース|
 
 
 # Stories
