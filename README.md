@@ -2,7 +2,7 @@
 |Word|Description|
 |----|-----------|
 |beepro|物理的に同一のコードベースを複数人で群がって同期的に開発を行う|
-|bee| Developers who using beepro |
+|bee| Developers who are join to beepro |
 |honey source|honeycomb上に存在しているコードベース|
 |honeycomb|beeproが適応されているコードベースを管理するサーバー|
 |dancer|beeの行った変更をhoneycombに対して通知する各IDEのプラグイン|
