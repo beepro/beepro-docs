@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "wss://honeycomb.herokuapp.com/ws/v1/dance",
+  "type": "object",
+  "properties": {
+    "type": {
+      "$id": "/properties/type",
+      "type": "string",
+      "enum": [
+        "create",
+        "delete",
+        "change"
+      ],
+      "title": "type of manipulation"
+    },
+    "path": {
+      "$id": "/properties/path",
+      "type": "string",
+      "title": "target file path from context root"
+    },
+    "who": {
+      "$id": "/properties/who",
+      "type": "string",
+      "title": "name of dancing bee"
+    },
+    "contents": {
+      "$id": "/properties/contents",
+      "type": "string",
+      "title": "file contents when created the file"
+    },
+    "change": {
+      "$id": "/properties/change",
+      "type": "object",
+      "properties": {
+        "from": {
+          "$id": "/properties/change/properties/from",
+          "type": "object",
+          "properties": {
+            "row": {
+              "$id": "/properties/change/properties/from/properties/row",
+              "type": "integer",
+              "title": "row offset which changed from. index should count from 0"
+            },
+            "col": {
+              "$id": "/properties/change/properties/from/properties/col",
+              "type": "integer",
+              "title": "column offset which changed from. index should count from 0"
+            }
+          },
+          "required": [
+            "row",
+            "col"
+          ]
+        },
+        "to": {
+          "$id": "/properties/change/properties/to",
+          "type": "object",
+          "properties": {
+            "row": {
+              "$id": "/properties/change/properties/to/properties/row",
+              "type": "integer",
+              "title": "row offset which changed to. index should count from 0"
+            },
+            "col": {
+              "$id": "/properties/change/properties/to/properties/col",
+              "type": "integer",
+              "title": "column offset which changed to. index should count from 0"
+            }
+          },
+          "required": [
+            "row",
+            "col"
+          ]
+        },
+        "text": {
+          "$id": "/properties/change/properties/text",
+          "type": "string",
+          "title": "replace text which is between with from and to"
+        }
+      },
+      "required": [
+        "from",
+        "to",
+        "text"
+      ]
+    }
+  },
+  "required": [
+    "type",
+    "path",
+    "who"
+  ]
+}

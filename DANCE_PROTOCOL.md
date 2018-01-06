@@ -1,5 +1,34 @@
+# Schema
+See [dance.json](https://github.com/beepro/beepro-docs/blob/master/schemas/dance.json) for more detail
 
-## Examples
+# Examples
+
+## Create New File
+
+```
+{
+  "type": "create",
+  "path": "aaa/bbb.txt",
+  "who": "sideroad",
+  "contents": "aaa\nbbb",
+  "changes": {}
+}
+```
+
+## Delete File
+
+```
+{
+  "type": "delete",
+  "path": "aaa/bbb.txt",
+  "who": "sideroad",
+  "contents": null,
+  "changes": {}
+}
+```
+
+
+## File Contents Changes
 
 ### Type character
 ２行目の５文字目に`a`を入力した場合
@@ -21,15 +50,21 @@
 #### Changes
 ```
 {
-  "from": {
-    "row": 1,
-    "col": 4,
-  },
-  "to": {
-    "row":1,
-    "col":4
-  },
-  "text": "a"
+  "type": "change",
+  "path": "aaa/bbb.txt",
+  "who": "sideroad",
+  "contents": null,
+  "change": {
+    "from": {
+      "row": 1,
+      "col": 4
+    },
+    "to": {
+      "row":1,
+      "col":4
+    },
+    "text": "a"
+  }
 }
 ```
 
@@ -57,15 +92,21 @@ bbb
 #### Changes
 ```
 {
-  "from": {
-    "row": 0,
-    "col": 3,
-  },
-  "to": {
-    "row":0,
-    "col":3
-  },
-  "text": "aaaa\nbbb"
+  "type": "change",
+  "path": "aaa/bbb.txt",
+  "who": "sideroad",
+  "contents": null,
+  "change": {
+    "from": {
+      "row": 0,
+      "col": 3
+    },
+    "to": {
+      "row":0,
+      "col":3
+    },
+    "text": "aaaa\nbbb"
+  }
 }
 ```
 
@@ -96,14 +137,96 @@ bbbcc
 #### Changes
 ```
 {
-  "from": {
-    "row": 0,
-    "col": 0,
-  },
-  "to": {
-    "row":1,
-    "col":1
-  },
-  "text": "aaaa\nbbb"
+  "type": "change",
+  "path": "aaa/bbb.txt",
+  "who": "sideroad",
+  "contents": null,
+  "change": {
+    "from": {
+      "row": 0,
+      "col": 0
+    },
+    "to": {
+      "row":1,
+      "col":1
+    },
+    "text": "aaaa\nbbb"
+  }
+}
+```
+
+### Delete character
+１行目の２文字目を削除した場合
+
+#### As Is
+
+```
+123
+456
+```
+
+#### To Be
+
+```
+13
+456
+```
+
+#### Changes
+```
+{
+  "type": "change",
+  "path": "aaa/bbb.txt",
+  "who": "sideroad",
+  "contents": null,
+  "change": {
+    "from": {
+      "row": 0,
+      "col": 2
+    },
+    "to": {
+      "row":0,
+      "col":3
+    },
+    "text": ""
+  }
+}
+```
+
+
+### Delete selected characters
+１行目を削除した場合
+
+#### As Is
+
+```
+123
+456
+```
+
+#### To Be
+
+```
+456
+```
+
+#### Changes
+```
+{
+  "type": "change",
+  "path": "aaa/bbb.txt",
+  "who": "sideroad",
+  "contents": null,
+  "change": {
+    "from": {
+      "row": 0,
+      "col": 0
+    },
+    "to": {
+      "row":1,
+      "col":0
+    },
+    "text": ""
+  }
 }
 ```
