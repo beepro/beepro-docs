@@ -26,6 +26,6 @@
 5. HoneyCombは該当レポジトリ、ブランチのHoney Sourceが存在しているので、ダウンロードをしない
 6. プラグインは該当のHoney Sourceとのハンドシェイクを開始する
 
-## Be able to synchronize nector ( file contents change )
+## Be able to synchronize nectar ( file contents change )
 
-## Be able to synchronize nector ( file operation - making new file, delete file )
+## Be able to synchronize nectar ( file operation - making new file, delete file )
