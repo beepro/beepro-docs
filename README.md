@@ -13,19 +13,15 @@
 # Stories
 ## Be able to apply beepro
 1. Beeはブランチを切る（必要に応じて）みんぷろは関与しない
-2. Beeは みんぷろモードをオンにする
+2. Beeは dancerを使ってbeeproを適応する
 3. Beeは 対象のブランチ名を入力する（デフォルト値は現在のブランチ名）
-4. プラグインからHoneyCombにブランチ名、レポジトリのパスを知らせる
-5. HoneyCombは該当レポジトリ、ブランチのHoney Sourceが存在しないので、ダウンロードをする
-6. プラグインは該当のHoney Sourceとのハンドシェイクを開始する
+4. dancerはHoneyCombにブランチ名、レポジトリのパスを知らせる
+5. HoneyCombは該当レポジトリ、ブランチのHoney Sourceが存在しないので、ダウンロードを行い、Honey Sourceを初期化し、.beercを作成する
+6. dancerは該当のHoney Sourceとの同期処理を開始する
 
 ## Be able to join existing beepro
-1. Beeはブランチを切る（必要に応じて）みんぷろは関与しない
-2. Beeは みんぷろモードをオンにする
-3. Beeは 対象のブランチ名を入力する（デフォルト値は現在のブランチ名）
-4. プラグインからHoneyCombにブランチ名、レポジトリのパスを知らせる
-5. HoneyCombは該当レポジトリ、ブランチのHoney Sourceが存在しているので、ダウンロードをしない
-6. プラグインは該当のHoney Sourceとのハンドシェイクを開始する
+1. Beeはブランチをチェックアウトする
+2. dancerは .beercを検知し、設定を基にHoney Sourceとの同期処理を開始する
 
 ## Be able to synchronize nectar ( file contents change )
 
