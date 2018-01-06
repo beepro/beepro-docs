@@ -21,7 +21,7 @@
 
 ## Be able to join existing beepro
 1. Beeはブランチをチェックアウトする
-2. dancerは .beercを元にHoney Sourceとの同期処理を開始する
+2. dancerは .beercを検知し、設定を基にHoney Sourceとの同期処理を開始する
 
 ## Be able to synchronize nectar ( file contents change )
 
