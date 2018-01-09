@@ -182,11 +182,11 @@ bbbcc
   "change": {
     "from": {
       "row": 0,
-      "col": 2
-    },
+      "col": 1
+    },
     "to": {
       "row":0,
-      "col":3
+      "col":2
     },
     "text": ""
   }
