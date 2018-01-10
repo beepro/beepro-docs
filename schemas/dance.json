@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "wss://beepro-honeycomb.herokuapp.com/ws/v1/dance",
+  "$id": "wss://honeycomb-v1.herokuapp.com/ws/dancers/:id",
   "type": "object",
   "properties": {
     "type": {
