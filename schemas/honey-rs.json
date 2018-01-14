@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "object",
+  "properties": {
+    "dance": {
+      "$id": "/properties/dance",
+      "type": "object",
+      "properties": {
+        "url": {
+          "$id": "/properties/dance/properties/url",
+          "type": "string",
+          "title": "Dance URL"
+        }
+      },
+      "required": [
+        "url"
+      ]
+    }
+  },
+  "required": [
+    "dance"
+  ]
+}

@@ -1,3 +1,9 @@
+# Protocol
+WebSocket
+
+# URL
+`wss://honeycomb-v1.herokuapp.com/ws/honeys/:id`
+
 # Schema
 See [dance.json](https://github.com/beepro/beepro-docs/blob/master/schemas/dance.json) for more detail
 

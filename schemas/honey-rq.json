@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "object",
+  "properties": {
+    "git": {
+      "$id": "/properties/git",
+      "type": "object",
+      "properties": {
+        "url": {
+          "$id": "/properties/git/properties/url",
+          "type": "string",
+          "title": "Remote Git URL"
+        },
+        "branch": {
+          "$id": "/properties/git/properties/branch",
+          "type": "string",
+          "title": "Remote Branch",
+          "default": "master"
+        },
+        "account": {
+          "$id": "/properties/git/properties/account",
+          "type": "string",
+          "title": "Account name"
+        },
+        "token": {
+          "$id": "/properties/git/properties/token",
+          "type": "string",
+          "title": "Personal token"
+        }
+      },
+      "required": [
+        "url",
+        "account",
+        "token"
+      ]
+    },
+    "commit": {
+      "$id": "/properties/commit",
+      "type": "object",
+      "properties": {
+        "message": {
+          "$id": "/properties/commit/properties/message",
+          "type": "string",
+          "title": "Commit message",
+          "default": ""
+        },
+        "interval": {
+          "$id": "/properties/commit/properties/interval",
+          "type": "number",
+          "title": "Interval minutes to change upstream",
+          "default": 1,
+          "exclusiveMinimum": 1
+        }
+      },
+      "required": []
+    }
+  },
+  "required": [
+    "git",
+    "commit"
+  ]
+}
