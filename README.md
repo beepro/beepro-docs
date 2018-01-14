@@ -14,21 +14,25 @@
 
 # Stories
 ## Apply beepro to the repository
-1. Beeはブランチを切る（必要に応じて）beeproは関与しない
-2. Beeは dancerを使ってbeeproを適応する
-3. Beeは 対象のブランチ名を入力する（デフォルト値は現在のブランチ名）
-4. dancerはHoneyCombにブランチ名、レポジトリのパスを知らせる [See Honey API docs](https://github.com/beepro/beepro-docs/blob/master/HONEY.md)
-5. HoneyCombは該当レポジトリ、ブランチのHoneyが存在しないので、ダウンロードを行い、Honeyを初期化し、.beercを作成する
-6. dancerは該当のhoneyとnectarのsyncを行い、danceを開始する
+1. Bee make branch for beepro if it is needed.
+2. Bee apply beepro by using dancer.
+3. Bee input branch name, account name, access token.
+4. dancer call honey API to create resource. [See Honey API docs](https://github.com/beepro/beepro-docs/blob/master/HONEY.md)
+5. dancer start to dance with honeycomb by using URL which response from honey API.
+6. honeycomb clone repository from origin.
+7. honeycomb generate .beerc then commit and push to origin.
 [See Dance protocol docs](https://github.com/beepro/beepro-docs/blob/master/DANCE_PROTOCOL.md)
+8. honeycomb dance to dancer to make .beerc
 
 ## Join to existing beepro
-1. Beeはブランチをチェックアウトする
-2. dancerは .beercを検知し、設定を基にhoneyとnectarのsyncを行い、danceを開始する
+1. Bee clone the repository or checkout target branch
+2. dancer detect .beerc on project root.
+3. dancer start to dance with honeycomb by using URL which is described in .beerc.
 
 ## Resume development
-1. BeeはIDEを立ち上げる
-2. dancerは .beercを検知し、設定を基にhoneyとnectarのsyncを行い、danceを開始する
+1. Bee start up IDE
+2. dancer detect .beerc on project root.
+3. dancer start to dance with honeycomb by using URL which is described in .beerc.
 
 
 
