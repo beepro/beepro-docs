@@ -1,7 +1,7 @@
 # Protocol
 HTTPS
 
-# URL
+# URL - POST
 `https://honeycomb-v1.herokuapp.com/api/honeys`
 
 # Schema
@@ -17,7 +17,7 @@ HTTPS
 
 ## Create New Honey
 
-#### RQ
+#### RQ - POST
 ```
 {
   "git": {
