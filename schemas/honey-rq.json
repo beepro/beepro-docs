@@ -22,6 +22,11 @@
           "type": "string",
           "title": "Account name"
         },
+        "email": {
+          "$id": "/properties/git/properties/email",
+          "type": "string",
+          "title": "Email"
+        },
         "token": {
           "$id": "/properties/git/properties/token",
           "type": "string",
@@ -31,6 +36,7 @@
       "required": [
         "url",
         "account",
+        "email",
         "token"
       ]
     },
