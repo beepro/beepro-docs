@@ -22,9 +22,7 @@ HTTPS
 {
   "git": {
     "url": "https://github.com/beepro/beepro-test-repository.git",
-    "branch": "master",
-    "account": "sideroad",
-    "token": "xxxxxyyyyysieisyiuye"
+    "branch": "master"
   },
   "commit": {
     "message": "beepro making commit",

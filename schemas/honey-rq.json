@@ -16,28 +16,10 @@
           "type": "string",
           "title": "Remote Branch",
           "default": "master"
-        },
-        "account": {
-          "$id": "/properties/git/properties/account",
-          "type": "string",
-          "title": "Account name"
-        },
-        "email": {
-          "$id": "/properties/git/properties/email",
-          "type": "string",
-          "title": "Email"
-        },
-        "token": {
-          "$id": "/properties/git/properties/token",
-          "type": "string",
-          "title": "Personal token"
         }
       },
       "required": [
-        "url",
-        "account",
-        "email",
-        "token"
+        "url"
       ]
     },
     "commit": {
