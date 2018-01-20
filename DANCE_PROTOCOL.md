@@ -7,7 +7,40 @@ WebSocket
 # Schema
 See [dance.json](https://github.com/beepro/beepro-docs/blob/master/schemas/dance.json) for more detail
 
-# Examples
+# Chat
+
+```
+{
+  "type": "chat",
+  "who": "sideroad",
+  "message": "hello world\nand good night"
+}
+```
+
+# Queue manipulation
+
+## Suspend to receive dances
+
+The client can be suspend to get dance from others.
+Dances are queued until `resume` is called.
+
+```
+{
+  "type": "suspend"
+}
+```
+
+## Resume to receive dances
+
+Queued dances will be received then start to get dance from others.
+
+```
+{
+  "type": "resume"
+}
+```
+
+# File Operations
 
 ## Create New File
 
