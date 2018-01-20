@@ -27,13 +27,18 @@
 ## Join to existing beepro
 1. Bee clone the repository or checkout target branch
 2. dancer detect .beerc on project root.
-3. dancer start to dance with honeycomb by using URL which is described in .beerc.
+3. dancer connect to honeycomb by using URL which is described in .beerc.
+4. dancer send `suspend` dance to suspend dances from others.
+5. git fetch and pull to update latest code.
+6. dancer send `resume` dance to resume dances from others.
 
 ## Resume development
 1. Bee start up IDE
 2. dancer detect .beerc on project root.
-3. dancer start to dance with honeycomb by using URL which is described in .beerc.
-
+3. dancer connect to honeycomb by using URL which is described in .beerc.
+4. dancer send `suspend` dance to suspend dances from others.
+5. git fetch and pull to update latest code.
+6. dancer send `resume` dance to resume dances from others.
 
 
 ## Be able to synchronize nectar with honey ( file contents change )
