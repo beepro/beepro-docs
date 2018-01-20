@@ -10,7 +10,7 @@
 |sync|honeyからnectarへの全ファイルの同期|
 |nectar|各beeのローカルに存在しているコードベース|
 |.beerc|honeycombが初期化時に生成するbeeproの設定ファイル。接続先などの情報をもつ|
-
+|nabee|honeycombからcommit, pushするアカウント。蜂蜜を食べ過ぎて、太り気味。|
 
 # Stories
 ## Apply beepro to the repository

@@ -2,6 +2,11 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "type": "object",
   "properties": {
+    "id": {
+      "$id": "/properties/id",
+      "type": "string",
+      "title": "Honey Resource ID"
+    },
     "dance": {
       "$id": "/properties/dance",
       "type": "object",
@@ -18,6 +23,7 @@
     }
   },
   "required": [
+    "id",
     "dance"
   ]
 }

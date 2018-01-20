@@ -23,10 +23,6 @@ HTTPS
   "git": {
     "url": "https://github.com/beepro/beepro-test-repository.git",
     "branch": "master"
-  },
-  "commit": {
-    "message": "beepro making commit",
-    "interval": 1
   }
 }
 ```
@@ -34,8 +30,9 @@ HTTPS
 #### RS
 ```
 {
+  "id": "d6127883f1c2b456451a55763239f807efcf535b1d9548b5943c5c1349f179b1",
   "dance": {
-    "url": "wss://honeycomb-v1.herokuapp.com/ws/honeys/c3f3a57814fd8249b9222c967707fb08bee811e70d5c2f88060813670b00c790"
+    "url": "wss://honeycomb-v1.herokuapp.com/ws/honeys/d6127883f1c2b456451a55763239f807efcf535b1d9548b5943c5c1349f179b1"
   }
 }
 ```
