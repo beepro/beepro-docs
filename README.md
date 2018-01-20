@@ -20,7 +20,7 @@
 4. dancer call honey API to create resource. [See Honey API docs](https://github.com/beepro/beepro-docs/blob/master/HONEY.md)
 5. dancer start to dance with honeycomb by using URL which response from honey API.
 6. honeycomb clone repository from origin.
-7. honeycomb generate .beerc then commit and push to origin.
+7. honeycomb generate .beerc then nabee commit and push to origin.
 [See Dance protocol docs](https://github.com/beepro/beepro-docs/blob/master/DANCE_PROTOCOL.md)
 8. honeycomb dance to dancer to make .beerc
 
