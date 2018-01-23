@@ -36,3 +36,16 @@ HTTPS
   }
 }
 ```
+
+# Binary File Upload
+
+# URL - POST
+`https://honeycomb-v1.herokuapp.com/api/honeys/:id/files/:path_of_file`
+
+- encrypt: multipart/form-data
+- field name: file
+
+# Binary File Delete
+
+# URL - DELETE
+`https://honeycomb-v1.herokuapp.com/api/honeys/:id/files/:path_of_file`

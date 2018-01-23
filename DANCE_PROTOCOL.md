@@ -66,6 +66,19 @@ Queued dances will be received then start to get dance from others.
 }
 ```
 
+## Move File
+
+```
+{
+  "type": "move",
+  "path": "aaa/bbb.txt",
+  "to": "aaa/ccc.txt",
+  "who": "sideroad",
+  "contents": null,
+  "changes": {}
+}
+```
+
 
 ## File Contents Changes
 
