@@ -1,21 +1,21 @@
 # Protocol
 HTTPS
 
-# URL - POST
+## Create Honey Resource
+
+### URL - POST
 `https://honeycomb-v1.herokuapp.com/api/honeys`
 
-# Schema
+### Schema
 
-## Request
+#### Request
 [honey-rq.json](https://github.com/beepro/beepro-docs/blob/master/schemas/honey-rq.json)
 
-## Response
+#### Response
 [honey-rs.json](https://github.com/beepro/beepro-docs/blob/master/schemas/honey-rs.json)
 
 
-# Examples
-
-## Create New Honey
+### Examples
 
 #### RQ - POST
 ```
@@ -37,15 +37,10 @@ HTTPS
 }
 ```
 
-# Binary File Upload
+## Binary File Upload
 
-# URL - POST
+### URL - POST
 `https://honeycomb-v1.herokuapp.com/api/honeys/:id/files/:path_of_file`
 
 - encrypt: multipart/form-data
 - field name: file
-
-# Binary File Delete
-
-# URL - DELETE
-`https://honeycomb-v1.herokuapp.com/api/honeys/:id/files/:path_of_file`

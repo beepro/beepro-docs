@@ -1,0 +1,23 @@
+{
+  "name": "beepro-docs",
+  "version": "1.0.0",
+  "description": "beepro documents",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.14.11"
+  },
+  "scripts": {
+    "start": "nodemon --exec \"sh plantuml.sh .\" -e plantuml,pml,puml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beepro/beepro-docs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beepro/beepro-docs/issues"
+  },
+  "homepage": "https://github.com/beepro/beepro-docs#readme"
+}

@@ -1,0 +1,10 @@
+@startuml
+dancer -> honeycomb: websocket connect
+honeycomb -> honeycomb: suspend dances to the dancer
+honeycomb -> git: commit and push upstream
+honeycomb --> dancer: dance "sync"
+dancer -> git: fetch & pull
+git --> dancer: download latest source code
+dancer -> honeycomb: dance "resume"
+honeycomb --> dancer: send queued dances
+@enduml

@@ -17,22 +17,17 @@ See [dance.json](https://github.com/beepro/beepro-docs/blob/master/schemas/dance
 }
 ```
 
+# Sync manipulation
+
+When dancer receive `sync` dance, git fetch and pull to update to latest.
+Then send `resume` dance to honeycomb.
+honeycomb will dance to the dancer to send all queued dances.
+
 # Queue manipulation
-
-## Suspend to receive dances
-
-The client can be suspend to get dance from others.
-Dances are queued until `resume` is called.
-
-```
-{
-  "type": "suspend"
-}
-```
 
 ## Resume to receive dances
 
-Queued dances will be received then start to get dance from others.
+Queued dances will be received then start to get dance as usual.
 
 ```
 {
