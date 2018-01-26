@@ -1,0 +1,18 @@
+Call honey API to make honey resource
+Connect to honeycomb by dance url in honey API response
+Detect .beerc when startup IDE and connect to honeycomb by dance url in .beerc
+Dance “change” to notify for file(text) contents change(typing)
+Dance “change” to notify for file(text) contents change(delete)
+Dance “change” to notify for file(text) contents change(paste to insert)
+Dance “change” to notify for file(text) contents change(select text and typing)
+Dance “change” to notify for file(text) contents change(select text and delete)
+Dance “change” to notify for file(text) contents change(select text and paste to replace)
+Dance “create” to notify for file(text) creation
+Dance “delete” to notify for file(text, binary) delete
+Dance to notify for file(text, binary) move
+Call file upload API if binary file is created
+Change file contents when receive change dance
+Create file when receive create dance
+Delete file when receive delete dance
+Move file when receive move dance
+git fetch, git pull, dance “resume”. when receive sync dance

@@ -59,3 +59,21 @@
 
 # Color Scheme
 https://coolors.co/e86161-989c94-f47e4b-25291c-e6e49f
+
+# Setup documentation environment
+
+```
+npm i
+```
+
+## Generate plantuml
+```
+npm run plantuml
+```
+
+## Generate task
+1. preare task files under `tasks` directory
+2. Execute below
+```
+npm run gentask -- --assignee nabuchi --label web
+```
