@@ -44,3 +44,18 @@ HTTPS
 
 - encrypt: multipart/form-data
 - field name: file
+
+
+### Examples
+
+#### RQ - POST
+```
+const file = // get file somehow from IDE
+const url = 'https://honeycomb-v1.herokuapp.com/api/honeys/d6127883f1c2b456451a55763239f807efcf535b1d9548b5943c5c1349f179b1/files/aaa/bbb.png';
+const formData = new FormData();
+formData.append('file', file);
+fetch(url, {
+  method: 'POST',
+  body: formData
+});
+```

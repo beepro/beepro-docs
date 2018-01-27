@@ -74,6 +74,7 @@ npm run plantuml
 ## Generate task
 1. preare task files under `tasks` directory
 2. Execute below
+
 ```
 npm run gentask -- --assignee nabuchi --label web
 ```
