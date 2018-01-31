@@ -7,6 +7,14 @@ WebSocket
 # Schema
 See [dance.json](https://github.com/beepro/beepro-docs/blob/master/schemas/dance.json) for more detail
 
+# Keepalive
+
+to keep alive the connection, keep to send message below
+
+```
+KEEPALIVE
+```
+
 # Chat
 
 ```
