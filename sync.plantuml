@@ -1,10 +1,15 @@
 @startuml
-dancer -> honeycomb: websocket connect
+dancer -> honeycomb: create honey resource
+honeycomb --> dancer: response dance URL of websocket
+dancer -> honeycomb: connect by websocket
 honeycomb -> honeycomb: suspend dances to the dancer
 honeycomb -> git: commit and push upstream
 honeycomb --> dancer: dance "sync"
 dancer -> git: fetch & pull
 git --> dancer: download latest source code
+dancer -> honeycomb: dance "join" to tell id and icon URL
+honeycomb -> other_dancers: dance "members" to update beepro members
+honeycomb -> dancer: dance "members" to update beepro members
 dancer -> honeycomb: dance "resume"
 honeycomb --> dancer: send queued dances
 @enduml

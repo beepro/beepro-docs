@@ -7,24 +7,6 @@ WebSocket
 # Schema
 See [dance.json](https://github.com/beepro/beepro-docs/blob/master/schemas/dance.json) for more detail
 
-# Keepalive
-
-to keep alive the connection, keep to send message below
-
-```
-KEEPALIVE
-```
-
-# Chat
-
-```
-{
-  "type": "chat",
-  "who": "sideroad",
-  "message": "hello world\nand good night"
-}
-```
-
 # Sync manipulation
 
 When dancer receive `sync` dance, git fetch and pull to update to latest.
@@ -40,6 +22,38 @@ Queued dances will be received then start to get dance as usual.
 ```
 {
   "type": "resume"
+}
+```
+
+# Join
+
+When dancer join into beepro, dancer should dance `join` to tell other dancers.
+
+```
+{
+  "type": "join",
+  "user": {
+    "id": "sideroad",
+    "icon": "https://avatars3.githubusercontent.com/u/411486?s=460&v=4"
+  }
+}
+```
+
+# Keepalive
+
+to keep alive the connection, keep to send message below
+
+```
+KEEPALIVE
+```
+
+# Chat
+
+```
+{
+  "type": "chat",
+  "who": "sideroad",
+  "message": "hello world\nand good night"
 }
 ```
 
