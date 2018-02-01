@@ -27,7 +27,7 @@ Queued dances will be received then start to get dance as usual.
 
 # Join
 
-When dancer join into beepro, dancer should dance `join` to tell other dancers.
+When dancer join into beepro, dancer should dance `join` to tell other dancers. honeycomb store mapping data between user and websocket connection.
 
 ```
 {
@@ -52,12 +52,13 @@ KEEPALIVE
 ```
 {
   "type": "chat",
-  "who": "sideroad",
   "message": "hello world\nand good night"
 }
 ```
 
 # File Operations
+
+When bee dance to honeycomb, honeycomb will multicast dance to all bees. The time, honeycomb inject sender's id into `who` field.
 
 ## Create New File
 
@@ -65,7 +66,6 @@ KEEPALIVE
 {
   "type": "create",
   "path": "aaa/bbb.txt",
-  "who": "sideroad",
   "contents": "aaa\nbbb",
   "changes": {}
 }
@@ -77,7 +77,6 @@ KEEPALIVE
 {
   "type": "delete",
   "path": "aaa/bbb.txt",
-  "who": "sideroad",
   "contents": null,
   "changes": {}
 }
@@ -90,7 +89,6 @@ KEEPALIVE
   "type": "move",
   "path": "aaa/bbb.txt",
   "to": "aaa/ccc.txt",
-  "who": "sideroad",
   "contents": null,
   "changes": {}
 }
@@ -121,7 +119,6 @@ KEEPALIVE
 {
   "type": "change",
   "path": "aaa/bbb.txt",
-  "who": "sideroad",
   "contents": null,
   "change": {
     "from": {
@@ -163,7 +160,6 @@ bbb
 {
   "type": "change",
   "path": "aaa/bbb.txt",
-  "who": "sideroad",
   "contents": null,
   "change": {
     "from": {
@@ -208,7 +204,6 @@ bbbcc
 {
   "type": "change",
   "path": "aaa/bbb.txt",
-  "who": "sideroad",
   "contents": null,
   "change": {
     "from": {
@@ -246,7 +241,6 @@ bbbcc
 {
   "type": "change",
   "path": "aaa/bbb.txt",
-  "who": "sideroad",
   "contents": null,
   "change": {
     "from": {
@@ -284,7 +278,6 @@ bbbcc
 {
   "type": "change",
   "path": "aaa/bbb.txt",
-  "who": "sideroad",
   "contents": null,
   "change": {
     "from": {
