@@ -7,6 +7,9 @@ WebSocket
 # Schema
 See [dance.json](https://github.com/beepro/beepro-docs/blob/master/schemas/dance.json) for more detail
 
+# Postman collections
+https://www.getpostman.com/collections/290b221ce41168f5ef2c
+
 # Sync manipulation
 
 When dancer receive `sync` dance, git fetch and pull to update to latest.
