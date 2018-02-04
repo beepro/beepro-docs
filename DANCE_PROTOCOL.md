@@ -140,7 +140,7 @@ When bee dance to honeycomb, honeycomb will multicast dance to all bees. The tim
 ```
 
 ### Paste words include line break
-１行目の４文字目に
+(As Is)の１行目の４文字目に
 ```
 aaaa
 bbb
@@ -150,13 +150,13 @@ bbb
 #### As Is
 
 ```
-aaa
+xxx
 ```
 
 #### To Be
 
 ```
-aaaaaaa
+xxxaaaa
 bbb
 ```
 
@@ -182,8 +182,8 @@ bbb
 
 
 ### Paste words to replace include line break
-１行目の１文字目から
-２行目の２文字目までを
+(As Is)の１行目の１文字目から
+２行目の１文字目までを
 ```
 aaaa
 bbb
@@ -193,15 +193,15 @@ bbb
 #### As Is
 
 ```
-aaa
-ccc
+xxx
+yyy
 ```
 
 #### To Be
 
 ```
 aaaa
-bbbcc
+bbbyy
 ```
 
 #### Changes
