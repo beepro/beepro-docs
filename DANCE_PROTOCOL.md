@@ -100,6 +100,8 @@ When bee dance to honeycomb, honeycomb will multicast dance to all bees. The tim
 
 ## File Contents Changes
 
+`change.from` から `change.to` の文字列を `change.text` で置換する
+
 ### Type character
 ２行目の５文字目に`a`を入力した場合
 
@@ -138,7 +140,7 @@ When bee dance to honeycomb, honeycomb will multicast dance to all bees. The tim
 ```
 
 ### Paste words include line break
-１行目の４文字目に
+(As Is)の１行目の４文字目に
 ```
 aaaa
 bbb
@@ -148,13 +150,13 @@ bbb
 #### As Is
 
 ```
-aaa
+xxx
 ```
 
 #### To Be
 
 ```
-aaaaaaa
+xxxaaaa
 bbb
 ```
 
@@ -180,8 +182,8 @@ bbb
 
 
 ### Paste words to replace include line break
-１行目の１文字目から
-２行目の２文字目までを
+(As Is)の１行目の１文字目から
+２行目の１文字目までを
 ```
 aaaa
 bbb
@@ -191,15 +193,15 @@ bbb
 #### As Is
 
 ```
-aaa
-ccc
+xxx
+yyy
 ```
 
 #### To Be
 
 ```
 aaaa
-bbbcc
+bbbyy
 ```
 
 #### Changes
@@ -292,6 +294,44 @@ bbbcc
       "col":0
     },
     "text": ""
+  }
+}
+```
+
+### Type new line code
+3行目の末尾に改行コードを入れて4行にする
+
+#### As Is
+```
+000
+111111111
+222
+```
+
+#### To Be
+```
+000
+111111111
+222
+
+```
+
+#### Changes
+```
+{
+  "type": "change",
+  "path": "aaa/bbb.txt",
+  "contents": null,
+  "change": {
+    "from": {
+      "row": 2,
+      "col": 3
+    },
+    "to": {
+      "row": 2,
+      "col": 3
+    },
+    "text": "\n"
   }
 }
 ```
