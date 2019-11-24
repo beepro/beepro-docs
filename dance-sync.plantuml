@@ -1,0 +1,13 @@
+@startuml
+MrA -> HC: v1 1:1 \\n
+HC --> MrA: v2
+HC --> MrB: v2
+MrB -> HC: v1 2:1 A
+HC -> HC: Read v1 dance from history
+alt successful case
+HC -> HC: and substract row by number of line break
+else
+HC -> HC: Read v1 from history and substract row by number of line break
+end
+HC -> HC: Apply 3:1 A
+@enduml
